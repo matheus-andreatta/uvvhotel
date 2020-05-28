@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="regras.css">
+</head>
+<body>
+  <div class="container">
+    <legend>
+      <center>
+        <h2><b>Campos do Hotel</b></h2>
+      </center>
+    </legend><br>
+    <form onsubmit="validaDataSaida()"  method="POST"  name="cadastro_usuario" id="cadastro_usuario" class=" col-md-6 ml-auto mr-auto" >
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Sobre o hotel</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Data de entrada</label>
+          <input type="date" name="data_entrada" class="form-control" placeholder="00/00/0000">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Data de saída</label>
+          <input type="date" name="data_saida" class="form-control" placeholder="00/00/0000">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Categoria do quarto</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Categoria">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Valor (R$)</label>
+          <input type="text" class="form-control" id="inputPassword4" placeholder="Valor do quarto em função da categoria">
+        </div>
+      </div>
+
+      <div class="form-group">
+          <label for="inputEmail4">Oferecido no quarto</label>
+          <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Observação</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Rua tal e talz">
+      </div>
+      <div class="form-group">
+        <label for="inputState">Formas de pagamento</label>
+        <select id="inputState" class="form-control">
+          <option selected>cartão Visa</option>
+          <option>cartão Mastercard</option>
+          <option>cartão American Express,</option>
+          <option>boleto</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+  </div><!-- /.container -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="validacoes.js"></script>
+</body>
+</html>
