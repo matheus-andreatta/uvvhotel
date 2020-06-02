@@ -59,6 +59,7 @@ function inserirNoHtml(valor){
   document.getElementById('inputValor').innerHTML = valor;
 }
 
+
 // FUNÇÃO PARA INSERIMOS AS CARACTÉRISTICAS DE CADA CATEGORIA NO FORMULÁRIO
 function InserirCategoria(){
   // PEGAMOS O VALOR DO TIPO DA CATEGORIA
